@@ -1,28 +1,25 @@
 {
-  "name": "projeto-ecoleta",
-  "version": "1.0.0",
-  "description": "Projeto Ecoleta, desenvolvido na Next Level Week da Rocketseat.",
+  "name": "ecoleta",
+  "version": "1.0.1",
+  "description": "A waste collection marketplace.",
   "main": "src/server.js",
   "scripts": {
-    "start": "node src/server.js"
+    "dev": "nodemon --env-file .env --experimental-strip-types --no-warnings src/server.js",
+    "start": "node --env-file .env --experimental-strip-types --no-warnings src/server.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/andersongames/projeto-ecoleta.git"
+    "url": "git+https://github.com/andersongames/ecoleta.git"
   },
   "keywords": [],
   "author": "Anderson Games",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/andersongames/projeto-ecoleta/issues"
-  },
-  "homepage": "https://github.com/andersongames/projeto-ecoleta#readme",
+  "license": "MIT",
   "dependencies": {
-    "express": "^4.17.1",
-    "nunjucks": "^3.2.1",
-    "sqlite3": "^4.2.0"
+    "express": "^5.2.1",
+    "nunjucks": "^3.2.4",
+    "sqlite3": "^6.0.1"
   },
   "devDependencies": {
-    "nodemon": "^2.0.4"
+    "nodemon": "^3.1.14"
   }
 }
